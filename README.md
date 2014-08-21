@@ -1,6 +1,6 @@
 # TicTacToe
 
-TODO: Write a gem description
+A simple Tic Tac Toe game. An entry for TeamTreehouse.com forum contest.
 
 ## Installation
 
@@ -18,7 +18,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+To play a game run:
+
+    $ ruby example/example_game.rb
 
 ## Contributing
 
