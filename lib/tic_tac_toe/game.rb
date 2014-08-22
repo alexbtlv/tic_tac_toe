@@ -13,11 +13,17 @@ module TicTacToe
 		end
 
 		def solicit_move
-			"#{current_player.name}: Enter a number between 1 and 9 to make your move"
+			"Your move #{current_player.name}, please enter a number between 1 and 9"
 		end
 
 		def get_move(human_move = gets.chomp)
-			human_move_to_coordinate(human_move)
+			if human_move.to_i < 10 && human_move.to_i > 0 && human_move.kind_of?(String)
+				human_move_to_coordinate(human_move)
+			else
+				puts "Invalid input"
+				puts solicit_move
+				x, y = get_move
+			end
 		end
 
 		def game_over_message

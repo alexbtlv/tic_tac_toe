@@ -20,6 +20,16 @@ module TicTacToe
 			false
 		end
 
+		def display_positions # initial user friendly board display
+   			puts ""
+    		puts " 1 | 2 | 3 "
+    		puts "-----------"
+    		puts " 4 | 5 | 6 "
+    		puts "-----------"
+    		puts " 7 | 8 | 9 "
+   			puts ""
+		end
+
 		def formatted_grid
 		    grid.each do |row|
 		        puts row.map { |cell| cell.value.empty? ? "_" : cell.value }.join(" ")
