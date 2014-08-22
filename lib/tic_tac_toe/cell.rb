@@ -5,5 +5,13 @@ module TicTacToe
 		def initialize(value = "")
 			@value = value
 		end
+
+		def taken?
+			if self.value
+				true
+			else
+				false
+			end
+		end
 	end
 end
